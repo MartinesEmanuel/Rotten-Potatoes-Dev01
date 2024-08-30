@@ -1,38 +1,32 @@
 import '../style/Home.css'
 import Carousel from '../Caroseu/carosel'
-const linkTo = "http://http://localhost:5173/description"
 export default function Home(){
     return(
         <>
         <div className='carosel'>
-            <h2>Comedia</h2>
-            <Carousel
-            genere={'37999'}/>
+            <h2>Filmes</h2>
+            <Carousel/>
         </div>
 
         <div className='carosel'>
-        <h2>Terror</h2>
-            <Carousel
-            genere={"35120"}/>
+        <h2>Filmes de terror</h2>
+            <Carousel/>
         </div>
 
         <div className='carosel'>
-        <h2>Ação</h2>
-            <Carousel
-            genere={"6"}/>
+        <h2>Filmes de comédia</h2>
+            <Carousel/>
         </div>
 
         
         <div className='carosel'>
         <h2>Filmes de aventura</h2>
-            <Carousel
-            genere={"21"}/>
+            <Carousel/>
         </div>
 
         <div className='carosel'>
-        <h2>Sci-fi</h2>
-            <Carousel
-            genere={"5"}/>
+        <h2>Filmes de ficção científica</h2>
+            <Carousel/>
         </div>
 
         </> 

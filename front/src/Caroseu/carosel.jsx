@@ -3,9 +3,9 @@ import React from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import YourComponent from './redirecionamento/randomfilmes.jsx'
+import ClickableImage from './redirecionamento/redirecionamento.jsx';
 
-const Carousel = ({genere}) => {
+const Carousel = () => {
   const settings = {
     dots: false,
     infinite: false,
@@ -13,11 +13,14 @@ const Carousel = ({genere}) => {
     slidesToShow: 6,
     slidesToScroll: 3,
   };
-  console.log(genere)
+
   const slideContents = Array.from({ length: 10 }, (_, index) => (
     <div key={index}>
-      <YourComponent
-      genre= {genere}/>
+      <ClickableImage
+        imageUrl={`https://www.intoxianime.com/wp-content/uploads/2023/08/F4M7DiMbgAAuHUV.jpg`}
+        alt={`Slide ${index + 1}`}
+        linkTo={'http://localhost:5173/description'}
+      />
     </div>
   ));
 
@@ -31,4 +34,3 @@ const Carousel = ({genere}) => {
 };
 
 export default Carousel;
-
